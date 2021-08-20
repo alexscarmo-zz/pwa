@@ -2,6 +2,11 @@
     class Aluno {
         private $nome, $cr;
 
+        public function __construct($nome, $cr){
+            $this->nome = $nome;
+            $this->cr = $cr;
+        }
+
         public $getNome();
 
         public inscreveDisciplina($disciplina);
