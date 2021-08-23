@@ -10,7 +10,7 @@
         public $getNome();
 
         public inscreveDisciplina($disciplina){
-            
+            $disciplina->$alunosInscritos[] = $this
         }
     }
 
@@ -35,7 +35,9 @@
 
         public imprimeTurmas();
 
-        public calculaTurmas($disciplina);
+        public calculaTurmas($disciplina){
+            $disciplina->$alunosInscritos
+        }
     }
 
     $aluno1 = new Aluno("João", 8.5);
@@ -49,4 +51,8 @@
     $aluno1->inscreveDisciplina($disciplina1);
     $aluno2->inscreveDisciplina($disciplina1);
     $aluno3->inscreveDisciplina($disciplina1);
+
+    $turmasDisciplina->calculaTurmas($disciplina1);
+
+    $turmasDisciplina->imprimeTurmas();
 ?>
