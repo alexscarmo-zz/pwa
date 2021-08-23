@@ -36,7 +36,9 @@
         public imprimeTurmas();
 
         public calculaTurmas($disciplina){
-            $disciplina->$alunosInscritos
+            foreach ($disciplina->$alunosInscritos as &$aluno){
+                
+            }
         }
     }
 
