@@ -9,12 +9,18 @@
 
         public $getNome();
 
-        public inscreveDisciplina($disciplina);
+        public inscreveDisciplina($disciplina){
+            
+        }
     }
 
     class Disciplina {
         private $alunosInscritos = array();
         private $nomeDisciplina;
+
+        public function __construct($nomeDisciplina){
+            $this->nomeDisciplina = $nomeDisciplina;
+        }
 
         public getAlunosInscritos();
     }
